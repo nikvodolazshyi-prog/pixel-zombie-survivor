@@ -1,11 +1,23 @@
 # Pixel Zombie Survivor
 
-**Версия 1.1** · Unity 6000.6.7f1 · Windows
+**Версия 1.2** · Unity 6000.6.7f1 · Windows
 
 2D pixel-art top-down игра про оборону базы среди зомби: волны врагов, строительство на сетке,
 турели и баррикады, прокачка построек, магазин оружия и босс на 25-й волне. Весь контент
 (спрайты, кадры анимации, префабы, ScriptableObject-ассеты, сцена) генерируется редакторным
 скриптом — внешние ассеты не нужны.
+
+## Что нового в 1.2
+
+- **Ярлыки для запуска игры.** Новый инструмент `ShortcutCreator` создаёт ярлыки «Pixel Zombie
+  Survivor» на рабочем столе, в меню «Пуск», в корне проекта и в папке сборки — игра
+  запускается двойным кликом, без Unity.
+  Меню: **Tools ▸ Pixel Zombie Survivor ▸ Create Game Shortcuts**.
+- **Сборка и ярлыки в один клик.** **Build Windows Player** после успешной сборки сам
+  пересоздаёт ярлыки, поэтому они всегда указывают на свежий `.exe`.
+- **Готовый Windows-билд** в `Builds/Windows/PixelZombieSurvivor.exe` (в репозиторий не
+  коммитится, папка в `.gitignore`).
+- Версия игрока поднята до **1.2** (`bundleVersion`).
 
 ## Что нового в 1.1
 
@@ -242,8 +254,20 @@ Resolution and Presentation), так что билд стартует во ве�
 
 Сборка в один клик: **Tools ▸ Pixel Zombie Survivor ▸ Build Windows Player** — готовый плеер
 появится в `Builds/Windows/PixelZombieSurvivor.exe` (то же самое делает
-`PlayerBuilder.BuildWindows64` из командной строки, параметр `-buildPath`). Ярлык на рабочем
-столе запускает эту сборку напрямую, без Unity.
+`PlayerBuilder.BuildWindows64` из командной строки, параметр `-buildPath`). После сборки
+автоматически создаются ярлыки, а отдельно их можно обновить через
+**Tools ▸ Pixel Zombie Survivor ▸ Create Game Shortcuts**.
+
+**Где лежат ярлыки:**
+
+| Где | Путь |
+| --- | --- |
+| Рабочий стол | `%USERPROFILE%\Desktop\Pixel Zombie Survivor.lnk` |
+| Меню «Пуск» | `%APPDATA%\Microsoft\Windows\Start Menu\Programs\Pixel Zombie Survivor.lnk` |
+| Корень проекта | `<проект>\Pixel Zombie Survivor.lnk` |
+| Папка сборки | `Builds\Windows\Играть.lnk` |
+
+Все они запускают собранный `.exe` напрямую — Unity и редактор для игры не нужны.
 
 ## Структура проекта
 
@@ -266,8 +290,8 @@ Assets/PixelZombieSurvivor/
                  BuildingPlacementController, WorldHealthBar
     Pooling/     PoolService, PooledObject, IPoolable
     UI/          HudController, ShopUIController, UIFactory, UiTheme
-  Editor/        PixelArtGenerator, DemoProjectBuilder, PlayerBuilder, SmokeTestRunner,
-                 ProjectAutoSetup
+  Editor/        PixelArtGenerator, DemoProjectBuilder, PlayerBuilder, ShortcutCreator,
+                 SmokeTestRunner, ProjectAutoSetup
   Art/           сгенерированные PNG (спрайты и кадры анимации)
   Data/          сгенерированные .asset (оружие, зомби, постройки, расходники, волны)
   Prefabs/       Player, Zombie, Boss, снаряды, постройки, монета

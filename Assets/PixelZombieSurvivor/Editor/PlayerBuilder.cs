@@ -18,17 +18,22 @@ namespace PixelZombieSurvivor.Editor
     {
         public const string DefaultBuildFolder = "Builds/Windows";
         public const string ExecutableName = "PixelZombieSurvivor.exe";
-        public const string GameVersion = "1.1";
+        public const string GameVersion = "1.2";
 
         [MenuItem("Tools/Pixel Zombie Survivor/Build Windows Player", priority = 30)]
         public static void BuildWindows64FromMenu()
         {
             string folder = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), DefaultBuildFolder));
             string result = BuildWindows64(folder);
-            if (!string.IsNullOrEmpty(result))
+            if (string.IsNullOrEmpty(result))
             {
-                EditorUtility.RevealInFinder(result);
+                return;
             }
+
+            // Keep the desktop / Start Menu shortcuts pointing at the fresh build.
+            ShortcutCreator.CreateShortcuts(out string message);
+            Debug.Log("[Pixel Zombie Survivor] " + message);
+            EditorUtility.RevealInFinder(result);
         }
 
         public static void BuildWindows64()
