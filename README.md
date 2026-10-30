@@ -17,6 +17,9 @@
   пересоздаёт ярлыки, поэтому они всегда указывают на свежий `.exe`.
 - **Готовый Windows-билд** в `Builds/Windows/PixelZombieSurvivor.exe` (в репозиторий не
   коммитится, папка в `.gitignore`).
+- **Скачиваемая сборка** — `PixelZombieSurvivor-1.2-win64.zip` (34,5 МБ) приложена к релизу
+  [v1.2](https://github.com/nikvodolazshyi-prog/pixel-zombie-survivor/releases/tag/v1.2):
+  распакуйте и запустите `PixelZombieSurvivor.exe`.
 - Версия игрока поднята до **1.2** (`bundleVersion`).
 
 ## Что нового в 1.1
@@ -40,6 +43,18 @@
 - Ввод: legacy Input Manager (`Input.GetAxisRaw`, `Input.GetMouseButton`)
 - UI: UGUI (`UnityEngine.UI`), собирается в рантайме кодом, без TextMeshPro
 - Namespace: `PixelZombieSurvivor`
+
+## Скачать и играть (без Unity)
+
+1. Откройте [релиз **v1.2**](https://github.com/nikvodolazshyi-prog/pixel-zombie-survivor/releases/tag/v1.2)
+   и скачайте `PixelZombieSurvivor-1.2-win64.zip` (34,5 МБ).
+2. Распакуйте архив в любую папку.
+3. Запустите `PixelZombieSurvivor.exe` — игра стартует во весь экран (F11 / Alt+Enter — окно).
+
+> **Почему в репозитории нет `.lnk`-ярлыка.** Ярлык Windows хранит абсолютный путь к `.exe` на
+> конкретном компьютере, поэтому скачанный с GitHub файл у вас не откроется. Ярлык создаётся
+> локально после сборки: **Tools ▸ Pixel Zombie Survivor ▸ Create Game Shortcuts** — он появится
+> на рабочем столе, в меню «Пуск», в корне проекта и в папке сборки.
 
 ## Быстрый старт
 
