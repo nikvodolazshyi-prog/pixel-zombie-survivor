@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5cb5b59420cc114294564693a7471f8, type: 3}
+  m_Name: GameDatabase
+  m_EditorClassIdentifier: Assembly-CSharp::PixelZombieSurvivor.Data.GameDatabaseSO
+  weapons:
+  - {fileID: 11400000, guid: 3fced2384e661014c94519c8080d8e90, type: 2}
+  - {fileID: 11400000, guid: 070d5de56c0b9534d8c0dad5ad3fdc7e, type: 2}
+  - {fileID: 11400000, guid: 3a8b5bd85b3373f408d57e830c25704f, type: 2}
+  - {fileID: 11400000, guid: 75c9ea99c82ef184881b72115ee6866a, type: 2}
+  - {fileID: 11400000, guid: 6f893184b86a2704b8aa120c48f5b834, type: 2}
+  - {fileID: 11400000, guid: e7e2708327466fc44970611269099d14, type: 2}
+  buildings:
+  - {fileID: 11400000, guid: 9dd3ab1f8914ecf479d80a97eab8065b, type: 2}
+  - {fileID: 11400000, guid: 8bd934b1b19d43b4f95ebd98ccbd47d7, type: 2}
+  - {fileID: 11400000, guid: 2976c55377ee48542b7238866f13b68f, type: 2}
+  - {fileID: 11400000, guid: 7a686a367b61b304dac746c9ede4910b, type: 2}
+  - {fileID: 11400000, guid: e364532006ae560419f728643c8341c2, type: 2}
+  consumables:
+  - {fileID: 11400000, guid: bfc07043364bd1e4b9f5efd9dac5b860, type: 2}
+  - {fileID: 11400000, guid: b0a79fc21d9d1a64da3f1b4ddb068600, type: 2}
+  waveSettings: {fileID: 11400000, guid: 06f99173610edf54faabdfe2361dc242, type: 2}
+  zombies:
+  - {fileID: 11400000, guid: 831c3f3816cddc540b29d0714693a9af, type: 2}
+  - {fileID: 11400000, guid: df73b98e64bd3b64aa098608e9285c46, type: 2}
+  - {fileID: 11400000, guid: 43f2fe5dbfb157d4591c35744e194374, type: 2}
+  - {fileID: 11400000, guid: 4152613f5e997b547a5236163b421144, type: 2}
+  startingCoins: 450
+  startingWeapon: {fileID: 11400000, guid: 3fced2384e661014c94519c8080d8e90, type: 2}
+  zombiePrefab: {fileID: 8382731848671525427, guid: 39b4888f380ec6a4cb3565178c5b8160, type: 3}
+  bossPrefab: {fileID: 6403034619311488165, guid: 7ea57bdf733fdbf4686bdcdc1ab45520, type: 3}
+  bulletPrefab: {fileID: 3557786771419751729, guid: 5e8d713f240f8bd48895f6b6d7ba6aeb, type: 3}
+  coinPrefab: {fileID: 7078594097367273072, guid: d45e0cc03ae089f44a6298df9686573c, type: 3}

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b91aa293c6e1ad4f972270f7226d621, type: 3}
+  m_Name: Weapon_M4A1
+  m_EditorClassIdentifier: Assembly-CSharp::PixelZombieSurvivor.Data.WeaponDataSO
+  displayName: M4A1
+  description: "\u0422\u043E\u0447\u043D\u044B\u0439 \u0430\u0432\u0442\u043E\u043C\u0430\u0442 \u0441 \u0445\u043E\u0440\u043E\u0448\u0438\u043C \u0443\u0440\u043E\u043D\u043E\u043C \u0438 \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u0438\u0440\u0443\u0435\u043C\u044B\u043C \u0440\u0430\u0437\u0431\u0440\u043E\u0441\u043E\u043C."
+  icon: {fileID: 21300000, guid: e6701961223d0474988cfe8847d9136a, type: 3}
+  weaponSprite: {fileID: 21300000, guid: e6701961223d0474988cfe8847d9136a, type: 3}
+  price: 1250
+  ownedByDefault: 0
+  damage: 18
+  fireRate: 8.5
+  clipSize: 30
+  reloadTime: 1.75
+  spreadDegrees: 2.2
+  range: 18
+  projectileSpeed: 28
+  pellets: 1
+  automatic: 1
+  projectileColor: {r: 1, g: 0.8862745, b: 0.6039216, a: 1}
+  startingReserveAmmo: 180
+  maxReserveAmmo: 480
+  ammoBoxAmount: 140
+  moveSpeedMultiplier: 0.97

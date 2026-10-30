@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 811acedf1935e5242bfb5a5ac2493b71, type: 3}
+  m_Name: Zombie_Spitter
+  m_EditorClassIdentifier: Assembly-CSharp::PixelZombieSurvivor.Data.ZombieDataSO
+  displayName: "\u041F\u043B\u0435\u0432\u0430\u043B\u044C\u0449\u0438\u043A"
+  sprite: {fileID: 21300000, guid: aee491653a409054caf1f12c9c4d8efc, type: 3}
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  scale: 1
+  maxHealth: 46
+  moveSpeed: 1.8
+  damage: 11
+  attackCooldown: 1.7
+  attackRange: 6.5
+  rangedAttack: 1
+  projectileSpeed: 8.5
+  wallsToPierce: 1
+  projectileColor: {r: 0.7137255, g: 1, b: 0.29411766, a: 1}
+  walkFrames:
+  - {fileID: 21300000, guid: 98af8eedb3ade844aa3e629b93bc4ea0, type: 3}
+  - {fileID: 21300000, guid: 92fad18dd4d589c4ea2ef2a697cb47e4, type: 3}
+  - {fileID: 21300000, guid: 8e450464f1830184f9e23128e61a6d1b, type: 3}
+  - {fileID: 21300000, guid: d04ffad2466393049ba5f07153104639, type: 3}
+  - {fileID: 21300000, guid: 1fb9d383231a614469d9825a4fa6649c, type: 3}
+  - {fileID: 21300000, guid: 8408b9677d27779419b7b6e1b6e5cab2, type: 3}
+  - {fileID: 21300000, guid: 999cff7623210964392efc7137475abf, type: 3}
+  - {fileID: 21300000, guid: afec907a52522ad44bb5990beab98f7f, type: 3}
+  attackFrames:
+  - {fileID: 21300000, guid: 1ba7d026399fbc9458a63512c6ea1cb8, type: 3}
+  - {fileID: 21300000, guid: b536abdab8ba4814da8656198bbfe0cc, type: 3}
+  - {fileID: 21300000, guid: b285a10f0fa3c524bb2647d989849880, type: 3}
+  - {fileID: 21300000, guid: efc705a6cc7e8d64f92681a7cb25efdb, type: 3}
+  - {fileID: 21300000, guid: 021d6c513f3acab4aacea0a09ac4e778, type: 3}
+  - {fileID: 21300000, guid: 9280943b8f84c2546b5134295586648a, type: 3}
+  walkFramesPerSecond: 8
+  attackFramesPerSecond: 10
+  coinReward: 16

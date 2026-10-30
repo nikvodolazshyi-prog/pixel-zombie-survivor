@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90306254ad24de04da6a40380f3943d7, type: 3}
+  m_Name: Building_RepairStation
+  m_EditorClassIdentifier: Assembly-CSharp::PixelZombieSurvivor.Data.BuildingDataSO
+  displayName: "\u0420\u0435\u043C\u043E\u043D\u0442\u043D\u044B\u0439 \u043C\u043E\u0434\u0443\u043B\u044C"
+  description: "\u041F\u043E\u0441\u0442\u0435\u043F\u0435\u043D\u043D\u043E \u0447\u0438\u043D\u0438\u0442 \u0432\u0441\u0435 \u043F\u043E\u0441\u0442\u0440\u043E\u0439\u043A\u0438 \u0440\u044F\u0434\u043E\u043C, \u0432\u043A\u043B\u044E\u0447\u0430\u044F \u0441\u0435\u0431\u044F."
+  buildingType: 2
+  icon: {fileID: 21300000, guid: 05aa0140d9a085a4a9904ce973da24a7, type: 3}
+  prefab: {fileID: 3052448742726522966, guid: 212f1149d3d1d1a469a03e2fadf3c150, type: 3}
+  price: 400
+  maxHealth: 160
+  placementRadius: 0.72
+  placementDistanceFromPlayer: 1.5
+  turretDamage: 0
+  turretFireRate: 1
+  turretRange: 1
+  turretProjectileSpeed: 1
+  turretRotationSpeed: 1
+  turretProjectileColor: {r: 1, g: 1, b: 1, a: 1}
+  generatorCoinAmount: 1
+  generatorInterval: 1
+  generatorBurstSize: 1
+  repairPerSecond: 12
+  repairRadius: 4.5
+  maxLevel: 5
+  upgradeBaseCost: 140
+  upgradeCostGrowth: 1.55
+  damagePerLevel: 0
+  fireRatePerLevel: 0
+  rangePerLevel: 0.05
+  healthPerLevel: 0.2
+  generatorPerLevel: 0
+  repairPerLevel: 0.3
+  sellRefund: 0.6

@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a8973c947494d428bed6367b1b7e68, type: 3}
+  m_Name: WaveSettings
+  m_EditorClassIdentifier: Assembly-CSharp::PixelZombieSurvivor.Data.WaveSettingsSO
+  initialIntermission: 8
+  intermissionDuration: 10
+  spawnInterval: 0.62
+  baseZombiesPerWave: 6
+  zombiesAddedPerWave: 1
+  maxZombiesPerWave: 70
+  maxAliveAtOnce: 10
+  healthGrowthPerWave: 0.12
+  damageGrowthPerWave: 0.07
+  speedGrowthPerWave: 0.025
+  maxSpeedMultiplier: 1.25
+  coinGrowthPerWave: 0.1
+  roster:
+  - zombie: {fileID: 11400000, guid: 831c3f3816cddc540b29d0714693a9af, type: 2}
+    minimumWave: 1
+    weight: 1
+  - zombie: {fileID: 11400000, guid: df73b98e64bd3b64aa098608e9285c46, type: 2}
+    minimumWave: 2
+    weight: 0.5
+  - zombie: {fileID: 11400000, guid: 43f2fe5dbfb157d4591c35744e194374, type: 2}
+    minimumWave: 4
+    weight: 0.22
+  - zombie: {fileID: 11400000, guid: 4152613f5e997b547a5236163b421144, type: 2}
+    minimumWave: 6
+    weight: 0.3

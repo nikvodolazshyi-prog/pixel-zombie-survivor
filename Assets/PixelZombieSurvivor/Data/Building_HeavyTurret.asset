@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90306254ad24de04da6a40380f3943d7, type: 3}
+  m_Name: Building_HeavyTurret
+  m_EditorClassIdentifier: Assembly-CSharp::PixelZombieSurvivor.Data.BuildingDataSO
+  displayName: "\u0422\u044F\u0436\u0451\u043B\u0430\u044F \u0442\u0443\u0440\u0435\u043B\u044C"
+  description: "\u041A\u0440\u0443\u043F\u043D\u043E\u043A\u0430\u043B\u0438\u0431\u0435\u0440\u043D\u0430\u044F \u0442\u0443\u0440\u0435\u043B\u044C: \u0431\u043E\u043B\u044C\u0448\u0435 \u0443\u0440\u043E\u043D\u0430, \u0442\u0435\u043C\u043F\u0430 \u0438 \u0440\u0430\u0434\u0438\u0443\u0441\u0430. \u0414\u043E\u0440\u043E\u0433\u0430\u044F, \u043D\u043E \u0434\u0435\u0440\u0436\u0438\u0442 \u043F\u043E\u0437\u0434\u043D\u0438\u0435 \u0432\u043E\u043B\u043D\u044B."
+  buildingType: 0
+  icon: {fileID: 21300000, guid: fd37b8a440a55394d962915c421d2316, type: 3}
+  prefab: {fileID: 2839482443391559314, guid: f1dcf5dbc54907147bc5266114220076, type: 3}
+  price: 900
+  maxHealth: 330
+  placementRadius: 0.82
+  placementDistanceFromPlayer: 1.6
+  turretDamage: 22
+  turretFireRate: 3.2
+  turretRange: 11
+  turretProjectileSpeed: 22
+  turretRotationSpeed: 420
+  turretProjectileColor: {r: 1, g: 0.47843137, b: 0.23921569, a: 1}
+  generatorCoinAmount: 8
+  generatorInterval: 6
+  generatorBurstSize: 4
+  repairPerSecond: 12
+  repairRadius: 4
+  maxLevel: 5
+  upgradeBaseCost: 260
+  upgradeCostGrowth: 1.6
+  damagePerLevel: 0.3
+  fireRatePerLevel: 0.1
+  rangePerLevel: 0.05
+  healthPerLevel: 0.22
+  generatorPerLevel: 0.3
+  repairPerLevel: 0.25
+  sellRefund: 0.6
